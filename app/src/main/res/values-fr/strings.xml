@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="done_custom">Done</string>
+    <string name="exit">Exit</string>
+    <string name="are_you_sure_to_exit">Are you sure?</string>
+    <string name="do_you_want_to_close">Do you want to close application?</string>
+    <string name="both">Both</string>
+    <string name="unlimited_access_to">Unlimited Access to All Premium Tools</string>
+    <string name="your_subscription_auto_renew">Your subscription auto-renews yearly unless canceled.</string>
+    <string name="subscription_are_managed_via">Subscriptions are managed via your Google Play Billing and will renew automatically unless canceled at least 24 hours before the current period ends.  After purchase, you can manage your subscriptions in your Account Settings.</string>
+    <string name="start_3_days">Start 3 days free trail</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rs_600">Rs 600/Month</string>
+    <string name="rs_5500">Rs 5,500/ Year</string>
+    <string name="rs_6700">Rs 6,700/ One-time Purchase</string>
+    <string name="get_3_days" />
+    <string name="unlock_all_feature">Unlock all features</string>
+    <string name="pro">PRO</string>
+    <string name="basic">Basic</string>
+    <string name="all_pdf_scanner">All PDF Scanner</string>
+    <string name="all_document_scanner">All Document Scanner</string>
+    <string name="merge_and_split"><![CDATA[Merge & Split PDF]]></string>
+    <string name="lock_all_pdf">Lock All PDF</string>
+    <string name="remove_all_ads">Remove All Ads</string>
+    <string name="no_upfront">No Upfront Payment Required</string>
+    <string name="subscribe_auto"><![CDATA[Subscribe auto-renews & cancel anytime]]></string>
+</resources>

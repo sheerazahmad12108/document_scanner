@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="are_you_happy">Are you happy with this app?</string>
+    <string name="how_would_you">How would you love this app</string>
+    <string name="rate_on_playstore">Rate on Playstore</string>
+    <string name="please_wait">Please Wait...</string>
+</resources>

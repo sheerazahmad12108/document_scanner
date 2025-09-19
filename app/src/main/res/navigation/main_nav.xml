@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.pdfscanner.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_extractTextFragment"
+            app:destination="@id/extractTextFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_signatureFragment"
+            app:destination="@id/signatureFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_idCardScannerFragment"
+            app:destination="@id/idCardScannerFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_history"
+            app:destination="@id/navigation_history"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_actionFragment"
+            app:destination="@id/actionFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_splitFileFragment"
+            app:destination="@id/splitFileFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_settings"
+            app:destination="@id/navigation_settings"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_fileViewerFragment"
+            app:destination="@id/fileViewerFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_history2"
+            app:destination="@id/navigation_history"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right"/>
+        <action
+            android:id="@+id/action_navigation_home_to_purchaseFragment"
+            app:destination="@id/purchaseFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.pdfscanner.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_navigation_history_to_fileViewerFragment"
+            app:destination="@id/fileViewerFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.pdfscanner.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_navigation_favorite_to_fileViewerFragment"
+            app:destination="@id/fileViewerFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.pdfscanner.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_navigation_settings_to_feedbackFragment"
+            app:destination="@id/feedbackFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_favorite"
+            app:destination="@id/navigation_favorite"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right"/>
+        <action
+            android:id="@+id/action_navigation_settings_to_purchaseFragment"
+            app:destination="@id/purchaseFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/extractTextFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.ExtractTextFragment"
+        android:label="fragment_extract_text"
+        tools:layout="@layout/fragment_extract_text">
+        <action
+            android:id="@+id/action_extractTextFragment_to_actionFragment"
+            app:destination="@id/actionFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signatureFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.SignatureFragment"
+        android:label="fragment_signature"
+        tools:layout="@layout/fragment_signature">
+        <action
+            android:id="@+id/action_signatureFragment_to_actionFragment"
+            app:destination="@id/actionFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/idCardScannerFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.IdCardScannerFragment"
+        android:label="fragment_id_card_scanner"
+        tools:layout="@layout/fragment_id_card_scanner" />
+    <fragment
+        android:id="@+id/actionFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.ActionFragment"
+        android:label="fragment_action"
+        tools:layout="@layout/fragment_action">
+        <action
+            android:id="@+id/action_actionFragment_to_fileViewerFragment"
+            app:destination="@id/fileViewerFragment"
+            app:enterAnim="@anim/exit_to_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fileViewerFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.FileViewerFragment"
+        android:label="fragment_file_viewer"
+        tools:layout="@layout/fragment_file_viewer" />
+    <fragment
+        android:id="@+id/splitFileFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.SplitFileFragment"
+        android:label="fragment_split_file"
+        tools:layout="@layout/fragment_split_file" />
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.example.pdfscanner.fragments.subfragments.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" />
+</navigation>

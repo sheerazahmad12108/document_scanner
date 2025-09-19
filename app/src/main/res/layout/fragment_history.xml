@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.HistoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_16sdp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_toEndOf="@id/ivBack"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:text="@string/files"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_toStartOf="@id/ivMergeIcon"
+            android:src="@drawable/search_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivMergeIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeader"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/red"
+        app:tabIndicatorFullWidth="true"
+        app:tabInlineLabel="true"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextAppearance="@style/TabLayoutStyleSelected"
+        app:tabSelectedTextColor="@color/red"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        app:tabTextColor="@color/clrd9" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnClick"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_margin="@dimen/_12ssp"-->
+    <!--        android:text="Click" />-->
+
+    <!--    <com.rajat.pdfviewer.PdfRendererView-->
+    <!--        android:id="@+id/pdfView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:pdfView_divider="@drawable/pdf_viewer_divider"-->
+    <!--        app:pdfView_showDivider="false" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivImage"-->
+    <!--        android:layout_width="@dimen/_100sdp"-->
+    <!--        android:layout_height="@dimen/_100sdp"-->
+    <!--        android:layout_below="@id/btnClick"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="@dimen/_20sdp"-->
+    <!--        android:visibility="gone" />-->
+
+</RelativeLayout>
